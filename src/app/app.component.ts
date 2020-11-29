@@ -7,5 +7,9 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
+  private sidebarVisibility = true;
 
+  public recieved(visibility: boolean): void {
+    this.sidebarVisibility = visibility;
+  }
 }
