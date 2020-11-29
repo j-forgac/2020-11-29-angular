@@ -9,6 +9,12 @@ import {Component} from '@angular/core';
 export class AppComponent {
   public sidebarVisibility = true;
 
+  public menu = {
+    '/': 'Home',
+    about: 'About',
+    contacts: 'Contacts'
+  };
+
   public recieved(visibility: boolean): void {
     this.sidebarVisibility = visibility;
   }
