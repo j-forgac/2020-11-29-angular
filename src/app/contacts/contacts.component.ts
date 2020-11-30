@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-contacts',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
+  username = '';
+  password = '';
+  confirm = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  printValues(): void{
+    console.log('username: ' + this.username);
+    console.log('password: ' + this.password);
+    console.log('confirm: ' + this.confirm);
+  }
 }
