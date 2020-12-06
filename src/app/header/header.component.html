@@ -6,7 +6,25 @@
     <li *ngFor="let item of menu | keyvalue">
       <a routerLink="/{{item.key}}">{{item.value}}</a>
     </li>
+    <!--Potom jsem zjistil, že se to dá dělat přes datalist, takže toto ani nepoužiju
+    <li>
+      <form (input)="printResults()" autocomplete="off">
+        <input type="text" name="search" id="search" placeholder="Enter Keyword" [(ngModel)]="search" >
+      </form>
+     </li>
+      -->
+    <li>
+      <form autocomplete="off">
+        <input list="components" name="browser" id="browser" placeholder="Enter Keyword" >
+        <datalist id="components" >
+          <option *ngFor="let item of menu | keyvalue" value="{{item.value}}">
+        </datalist>
+      </form>
+    </li>
   </ul>
+
+
+
 </nav>
 
 
