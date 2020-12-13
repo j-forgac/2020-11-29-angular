@@ -12,7 +12,8 @@ export class AppComponent {
   public menu = {
     '/': 'Home',
     about: 'About',
-    contacts: 'Contacts'
+    contacts: 'Contacts',
+    blog: 'Blog'
   };
 
   public recieved(visibility: boolean): void {

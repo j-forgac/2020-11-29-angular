@@ -1,0 +1,10 @@
+<p>blog</p>
+<div *ngFor="let blogpost of blogPosts">
+  <p>{{blogpost.title}}</p>
+  <p>{{blogpost.text}}</p>
+</div>
+<form (ngSubmit)="addBlogPost()">
+  <input [(ngModel)]="title" type="text" name="title">
+  <input [(ngModel)]="text" type="text" name="text">
+  <button>submit</button>
+</form>
