@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {FormsModule} from '@angular/forms';
 import { BlogComponent } from './blog/blog.component';
+import { MyUppercasePipe } from './my-uppercase.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BlogComponent } from './blog/blog.component';
     ContactsComponent,
     HeaderComponent,
     SidebarComponent,
-    BlogComponent
+    BlogComponent,
+    MyUppercasePipe,
   ],
   imports: [
     BrowserModule,

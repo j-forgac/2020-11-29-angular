@@ -8,7 +8,7 @@
 </div>
 <div *ngFor="let blogpost of blogPosts" class="lalatest">
   <div (click)="editedPost = blogpost; showForm()">
-    <p>{{blogpost.title}}</p>
+    <p>{{blogpost.title | myUppercase:6:".."}}</p>
     <p>{{blogpost.text}}</p>
   </div>
 </div>

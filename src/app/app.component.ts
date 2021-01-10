@@ -13,7 +13,7 @@ export class AppComponent {
     '/': 'Home',
     about: 'About',
     contacts: 'Contacts',
-    blog: 'Blog'
+    blog: 'Blog',
   };
 
   public recieved(visibility: boolean): void {
